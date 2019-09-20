@@ -1,27 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand " href="#">My-store</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
-  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<app-header></app-header> 
 
-  <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
-    
-      
-      <a class="nav-item nav-link" href="#">Product <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Checkout</a>
-      <a class="nav-item nav-link" href="#">Cart</a>
-      <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-      
-    
-  </div>
-</nav>
 
-<div class="container"  >
-    <input class="form-control form-control-lg" type="text" 
-    placeholder="Search" style="border: 1px solid black; margin-top: 10px; margin-left: -30px; margin-bottom: 20px">
+
+<div class="container wrapper"  >
+  <app-search></app-search>
+    
 
     <div class="row " style="margin-top:10px">
+      <app-product class="col-4"></app-product>
+      <app-product class="col-4"></app-product>
+
+      <!-- <app-product class="col-4"></app-product> -->
+      
+    
+    </div>
+    <!-- <div class="row" style="margin-top:10px">
         <div class="col-4 d-flex align-items-stretch">
             <div class="card" >
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM-QLrexQKNVqnfXOPnvKtkQNnNjyFzEHndBcWHnmR04NS6ekp" class="card-img-top" alt="...">
@@ -51,37 +44,6 @@
           </div></div>
         
     
-    </div>
-    <div class="row" style="margin-top:10px">
-        <div class="col-4 d-flex align-items-stretch">
-            <div class="card" >
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM-QLrexQKNVqnfXOPnvKtkQNnNjyFzEHndBcWHnmR04NS6ekp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-4 d-flex align-items-stretch">
-          <div class="card" >
-            <img src="https://img1.junaroad.com/uiproducts/15959323/pri_175_p-1549971662.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div></div>
-        <div class="col-4 d-flex align-items-stretch"><div class="card" >
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEs8A_rgJ07EF9XdtUcLcbetc17H_cbU1Y-oGuWmASLbyRYO6m" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div></div>
-        
-    
-    </div>
+    </div> -->
 </div>
-<footer class="blockquote-footer"> &#9400; Copyright 2019 </footer>
+<app-footer></app-footer>
