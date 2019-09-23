@@ -1,10 +1,12 @@
 
 <div class="card">
-    <img [src]= " productComp.image"  class="card-img-top" [alt]=" productComp.alt">
+    <img [src]= " productComp.imageUrl"  class="card-img-top" [alt]=" productComp.alt" style="height:400px">
     <div class="card-body">
-        <h5 class="card-title">{{ productComp.name }}</h5>
+        <h5 class="card-title">{{ productComp.title | uppercase }}</h5>
         <p class="card-text">{{productComp.description}}</p>
-        <a href="#" class="btn btn-primary" (click)="addToCart()">Add to cart</a>
+        <a    class="btn btn-primary" (click)="addToCart()">Add to cart</a>
+        <a  (click)="gotoDetails(productComp.id)"  class="btn btn-primary" >View Details</a>
+
     </div>
 </div>
 

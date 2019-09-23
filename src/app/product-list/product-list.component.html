@@ -1,0 +1,10 @@
+<app-search></app-search>
+
+    <div class="row " style="margin-top:10px">
+      <app-product *ngFor="let item of products" class="col-4"
+        [product]="item">
+
+      </app-product>
+      
+    <!-- <p> {{products |json }}</p> -->
+    </div>

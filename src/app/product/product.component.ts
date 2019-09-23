@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product',
@@ -7,15 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  productComp = {
-    name: `bags`,
-    image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM-QLrexQKNVqnfXOPnvKtkQNnNjyFzEHndBcWHnmR04NS6ekp`,
-    description: `Available in all size`,
-    alt: `Image on the way`
-  }
-  constructor() { }
+ @Input('product') productComp;
+  constructor (private router: Router) {  }
   addToCart(){
-    console.log("click")
+    console.log('click')
+  }
+  gotoDetails(productID){
+    this.router.navigate(['product', productID]);
   }
 
   ngOnInit() {
